@@ -1,0 +1,98 @@
+*{
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+h2{
+  color: white;
+  font-size: 1em;
+}
+
+body{
+  display: flex;
+  margin: 0;
+}
+
+div{
+  display: flex;
+}
+
+button{
+  height: 4em;
+  width: 427px;
+  margin-top: 3em;
+  background-color: #1f1f3D;
+  border: 2px solid #1f1f3D;
+  color: white;
+  font-size: 1em;
+}
+
+input{
+  height: 4em;
+  width: 420px;
+  margin-bottom: 3em;
+  border: 2px solid #1f1f3D;
+}
+
+.main-section{
+  flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.header-style{
+  display: flex;
+  height: 10em;
+  width: 100%;
+  position: absolute;
+  padding: 0 4em;
+  background-color: #1f1f3D;
+  align-items: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.header-style input{
+  margin-top: 40px;
+  margin-left: 100px;
+}
+
+.blue-side{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 3.5em;
+  margin-top: 10em;
+  width: 33%;
+  background-color: #587A8A;
+}
+
+.list-space{
+
+}
+
+#add-task-to-list{
+  width: 70px;
+  margin-top: 0px;
+  height: 3.18em;
+  color: white;
+}
+
+#task-item-input{
+  width: 350px;
+}
+
+.white-side{
+  display: flex;
+  margin-top: 10em;
+  flex-wrap: wrap;
+  width: 66%;
+
+}
