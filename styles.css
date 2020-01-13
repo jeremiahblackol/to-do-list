@@ -13,9 +13,9 @@ body{
   margin: 0;
 }
 
-div{
+/* div{
   display: flex;
-}
+} */
 
 button{
   height: 4em;
@@ -87,6 +87,10 @@ input{
 
 #task-item-input{
   width: 350px;
+}
+
+#placeTaskHere{
+  display: block;
 }
 
 .white-side{
