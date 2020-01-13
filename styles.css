@@ -13,6 +13,11 @@ body{
   margin: 0;
 }
 
+ul{
+  list-style: none;
+  display: block;
+}
+
 /* div{
   display: flex;
 } */
@@ -55,7 +60,6 @@ input{
   align-items: center;
   color: white;
   font-family: 'Open Sans', sans-serif;
-
 }
 
 .header-style input{
@@ -74,8 +78,13 @@ input{
   background-color: #587A8A;
 }
 
-.list-space{
-
+#task-card{
+  /* display: flex; */
+  /* height: inherit; */
+  /* width: max-content; */
+  width: 400px;
+  height: 500px;
+  border: 1px solid;
 }
 
 #add-task-to-list{
@@ -89,14 +98,44 @@ input{
   width: 350px;
 }
 
-#placeTaskHere{
-  display: block;
+
+.delete-list-item{
+  border-radius: 50%;
+  background-color: white;
+  color: blue;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin-top: 6px;
+
 }
 
 .white-side{
   display: flex;
+  flex-direction: column;
   margin-top: 10em;
   flex-wrap: wrap;
   width: 66%;
+}
 
+.block-list{
+  padding-top: 60px;
+  display: block;
+  height: 200px;
+  position: relative;
+}
+
+.urgent-button{
+  height: 40px;
+  width: 40px;
+}
+
+h3{
+  /* display: block; */
+  padding-bottom: 0;
+  height: 25px;
+  border-bottom: 1px solid;
+  width: 400px;
+  position: absolute;
+  display: flex;
 }
