@@ -17,7 +17,7 @@ makeTaskListButton.addEventListener('click', makeTaskCard);
 
 function createTaskList(event){
   var taskListValue = taskListInput.value;
-  placeTaskHere.insertAdjacentHTML('beforeend', `<div><button id=${taskId} class="delete-list-item"type="submit" name="button">${'X'}</button>
+  placeTaskHere.insertAdjacentHTML('beforeend', `<div><button id=${taskId} class="delete-list-item"type="submit" name="button"><i class="fa fa-close"></i></button>
   ${taskListValue}</div>`);
   clearTaskInputFields();
 }
@@ -43,7 +43,7 @@ function disableMakeTaskCardButton(){
 function makeTaskCard(event){
   var tasks = placeTaskHere.innerText;
   var taskCardTitle = document.querySelector('#task-title-input').value;
-  taskCardSpace.insertAdjacentHTML('beforeend', `<div id=${taskId}><div id='task-card'><h3>${taskCardTitle}</h3><div class="block-list">${tasks}</div><img class="urgent-button" src="assets/flash.svg" alt="">
+  taskCardSpace.insertAdjacentHTML('beforeend', `<div id=${taskId}><div id='task-card'><h3>${taskCardTitle}</h3><div class="block-list">${tasks}</div><i class="fa fa-flash"></i>
   </div></div>`)
   taskArray.push(tasks)
   window.localStorage.setItem('some-name', `${tasks}`);
